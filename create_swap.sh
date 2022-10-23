@@ -2,7 +2,7 @@
 # create swap
 
 # partition
-dd if=/dev/zero of=/swapfile bs=1M count=512 status=progress
+dd if=/dev/zero of=/swapfile bs=1M count=1024 status=progress
 # give permission
 chmod 0600 /swapfile
 mkswap -U clear /swapfile
