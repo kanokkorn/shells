@@ -5,6 +5,5 @@
 echo "enter ip set to scan:"
 read vlan
 sudo nmap -sP $vlan | grep pc
-
-# extract IP from stdout
+# read from stdout -> create list of IPs
 sudo nping --tcp-connect 5900 --rate 4 $ip_set
